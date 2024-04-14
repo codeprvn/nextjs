@@ -1,0 +1,169 @@
+.psfw-social-wrap {
+    margin: 0 !important;
+    display: flex;
+}
+
+
+ul.psfw-social-icons {
+    list-style: none !important;
+    list-style-type: none !important;
+    padding-left: 0 !important;
+    margin: 20px 0 !important;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-bottom: none;
+}
+ul.psfw-social-icons li:not(:last-child) {
+    margin-right: 8px;
+}
+ul.psfw-social-icons li {
+    margin-left: 0 !important;
+}
+
+table, button {
+    border-radius: 0 !important;
+}
+
+label {
+    display: inline-block;
+}
+.product-desc-content table.variations tr th, .product-desc-content table.variations tr td {
+    display: block;
+    width: 100%;
+}
+
+.thwvsf-wrapper-ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+
+.thwvsf-wrapper-ul .thwvsf-item-span-color {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: inherit;
+}
+
+thwvsf-wrapper-ul .thwvsf-wrapper-item-li.attr_swatch_design_1.thwvsf-selected, .thwvsf-wrapper-ul .thwvsf-wrapper-item-li.attr_swatch_design_1.thwvsf-selected:hover {
+    -webkit-box-shadow: 0 0 0 2px #827d7d;
+    box-shadow: 0 0 0 2px #827d7d;
+}
+.thwvsf-wrapper-ul .thwvsf-wrapper-item-li.thwvsf-label-li.attr_swatch_design_1 {
+    width: auto;
+    height: 45px;
+    color: #000;
+    background-color: #fff;
+}
+.thwvsf-wrapper-ul .thwvsf-wrapper-item-li.attr_swatch_design_1 {
+    width: 45px;
+    border-radius: 2px;
+    height: 45px;
+    box-shadow: 0 0 0 1px #d1d7da;
+}
+.thwvsf-wrapper-ul .thwvsf-wrapper-item-li.thwvsf-selected, .thwvsf-wrapper-ul .thwvsf-wrapper-item-li.thwvsf-selected:hover {
+    -webkit-box-shadow: 0 0 0 2px rgba(0,0,0,.9);
+    box-shadow: 0 0 0 2px #8b98a6;
+}
+.thwvsf-wrapper-ul .thwvsf-wrapper-item-li.thwvsf-label-li {
+    min-width: 30px;
+    text-align: center;
+}
+.thwvsf-wrapper-ul .thwvsf-wrapper-item-li.thwvsf-selected, .thwvsf-wrapper-ul .thwvsf-wrapper-item-li.thwvsf-selected:hover {
+    -webkit-box-shadow: 0 0 0 2px rgba(0,0,0,.9);
+    box-shadow: 0 0 0 2px #8d9647 !important;
+}
+.thwvsf-wrapper-item-li.thwvsf-tooltip {
+    position: relative;
+}
+.thwvsf-wrapper-ul .thwvsf-wrapper-item-li {
+    list-style: none;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    position: relative;
+    width: 45px;
+    height: 45px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #FFF;
+    -webkit-box-shadow: 0 0 0 1px rgba(0,0,0,.3);
+    box-shadow: 0 0 0 1px #d1d7da;
+    padding: 2px;
+    margin: 4px 8px 4px 0;
+}
+
+.product-desc-content .single_variation_wrap {
+    margin-bottom: 20px;
+}
+
+.product-desc-content .single_variation_wrap button {
+    border-radius: 0 !important;
+    font-weight: 500 !important;
+    min-height: 40px;
+    font-size: 15px !important;
+}
+
+.accordion {
+    --bs-accordion-bg: transparent;
+    --bs-accordion-border-color: none;
+}
+
+.accordion-item{
+    border: 1px solid #999 !important;
+    border-radius: 0px;
+}
+
+.accordion .accordion-item .accordion-header .accordion-button{
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    margin-bottom: 0;
+    color: #1C1C1C;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 0;
+}
+.accordion-body{
+    font-size: 14px;
+    margin-top: 0;
+    padding:0;
+    background-color: #fbfbfb;
+    /* padding-left: 1.5rem !important;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem !important; */
+}
+.accordion-header{
+    border-radius: 0px;
+}
+.accordion-button:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+    background-color: #fbfbfb;
+    box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    outline: 0;
+    box-shadow: none;
+}
+
+
+.accordion-button::after{
+    display: none;
+}

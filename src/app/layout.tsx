@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import 'bootstrap/dist/css/bootstrap.css'
 import "./globals.css";
+import MarqueeTop from "./component/home_page/MarqueeTop";
 import Header from "./component/home_page/Header";
 import Footer from "./component/home_page/Footer";
 import "@fortawesome/fontawesome-svg-core/styles.css";
@@ -23,6 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <MarqueeTop />
         <Header />
         {children}
         <Footer />

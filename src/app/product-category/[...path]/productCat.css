@@ -1,0 +1,148 @@
+.main-content.inner-pages {
+    min-height: 600px;
+    border-top: 1px solid #f5f5f5;
+}
+
+figure {
+    margin: 0 0 1rem;
+}
+
+figure img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.filter-sidebar-wrap {
+    padding: 20px;
+    background-color: #fdfdfd;
+    border: 1px solid #eee;
+}
+
+.filter-sidebar-wrap .widget.sidebar-header {
+    display: none;
+}
+.widget {
+    border-bottom: 1px solid #cacaca;
+    padding: 0px 0px 15px 0px;
+    margin: 0px 0px 20px 0px;
+}
+
+.clear-btn {
+    display: none;
+}
+
+.widget_price_filter {
+    margin-top: 20px;
+}
+.h2.widget-title {
+    font-size: 20px;
+}
+
+ .widget_price_filter .price_slider_wrapper .ui-widget-content {
+    background-color: #dee4ec;
+}
+
+ .widget_price_filter .price_slider_wrapper .ui-widget-content {
+    border-radius: 1em;
+    background-color: #35224c;
+    border: 0;
+}
+ .widget_price_filter .ui-slider-horizontal {
+    height: 4px;
+}
+ .widget_price_filter .ui-slider-horizontal {
+    height: .5em;
+}
+ .widget_price_filter .ui-slider {
+    position: relative;
+    text-align: left;
+    margin-left: .5em;
+    margin-right: .5em;
+}
+.widget_price_filter .price_slider {
+    margin-bottom: 1em;
+}
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.pwb-filter-products li {
+    margin-bottom: 5px;
+}
+
+label {
+    display: inline-block;
+}
+
+button.pwb-apply-filter {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0 !important;
+}
+
+.cust_plp_h3 {
+    font-size: 20px;
+}
+
+.product-block .product-wishlist {
+    bottom: 45px;
+    right: 0px;
+    z-index: 3;
+}
+
+.product-block a img {
+    opacity: 0.95;
+    transition: transform .2s ease-in;
+    will-change: transform;
+}
+
+.product-block:hover a img {
+    opacity: 1;
+transform: scale(1.02);
+}
+
+.cproductinfoh {
+    font-size: 13px;
+    margin: 5px 45px 0px 0px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+.cproductinfod {
+    font-size: 11px;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    margin-right: 20px;
+}
+
+.pro-price {
+    font-size: 12px;
+}
+
+span.cproductinfooffer {
+    color: #c35f04 !important;
+}
+.fw500 {
+    font-weight: 500 !important;
+}
+@media screen and (max-width: 575px) {
+    .filter-sidebar{
+        display: none;
+    }
+    .shortform{
+        display: none;
+    }
+
+    .product-block .product-wishlist {
+        bottom: 60px;
+        right: 0px;
+        z-index: 3;
+    }
+  }

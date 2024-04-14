@@ -18,7 +18,13 @@ function SustainableFashionComponent(props:any) {
   };
 
   return (
-    <div className="container py-sm-4 custom_img_size">
+    <section className="py-3">
+  <div className="container py-sm-2 custom_img_size">
+    <div className="section-heading text-center">
+      <h3>Sustainable Fashion Journal</h3>
+    </div>
+  
+    {/* <div className="container py-sm-4 custom_img_size"> */}
       <Swiper  style={{ height: '260px' }} 
         spaceBetween={20}
         slidesPerView={"auto"}
@@ -32,7 +38,7 @@ function SustainableFashionComponent(props:any) {
               >
                 <figure className="figure mb-0 overflow-hidden">
                   <img
-                    src={item?.url || "https://dhartii.in/wp-content/uploads/2024/01/Blog-4-1.png"}
+                    src={item?.url || "https://dhartii.in/wp-content/uploads/2023/10/Blog-3-1.png"}
                     className="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                     alt=""
                   />
@@ -47,7 +53,9 @@ function SustainableFashionComponent(props:any) {
           </SwiperSlide>
         ))}
       </Swiper>
+    {/* </div> */}
     </div>
+</section>
   );
 }
 

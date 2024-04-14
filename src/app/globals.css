@@ -1246,7 +1246,7 @@ search-wrapper .dgwt-wcas-search-wrapp {
 }
 
 .blog .wp-post-image:hover{
-	transform: scale(1.1);
+	transform: scale(1.02);
 	transition: all 1s ease-in-out;
 }
  video::-webkit-media-controls {
@@ -2715,7 +2715,7 @@ h2.widget-title {
 
 .product-block:hover a img {
     opacity: 1;
-transform: scale(1.1);
+transform: scale(1.0.2);
 }
 
 .widget {
@@ -3185,4 +3185,43 @@ td.actions {
     display: inline-block;
     padding: 5px;
 
+}
+
+/* ------------------Swipable css ---------------- */
+
+.section-heading h3:before {
+    content: "";
+    height: 1px;
+    background: #000;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    display: block;
+    position: absolute;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-heading h3 {
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #1C1C1C;
+    line-height: 120%;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 21px;
+    letter-spacing: 0px;
+}
+
+
+.section-heading {
+    margin-bottom: 35px;
+}
+
+.fs15 {
+    font-size: 15px;
+}
+.text-black-80 {
+    color: rgb(0 0 0 / 80%) !important;
 }

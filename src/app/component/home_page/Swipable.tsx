@@ -19,7 +19,11 @@ function Swipable() {
       };
     
     return (
-        <div className='container py-sm-4 custom_img_size'>
+        <section className="category-section pb-3 wedding-season">
+  <div className="container py-sm-4 custom_img_size">
+    <div className="section-heading-home section-heading text-center">
+      <h3 className="mb-4 mt-4">Discover Our Sustainable Brands</h3>
+    
         <Swiper
             spaceBetween={20}
             slidesPerView={'auto'}
@@ -41,7 +45,11 @@ function Swipable() {
                 </Link>
             </></SwiperSlide>))}    
         </Swiper>
+
         </div>
+    <div className="category-slider-2half swiper px-1"></div>
+  </div>
+</section>
     )
 }
 
