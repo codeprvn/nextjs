@@ -3175,6 +3175,11 @@ td.actions {
 }
 /* ---------------wishList--------------- */
 
+table.wishlist_table {
+    border-radius: 0;
+    font-size: 80%;
+}
+
  .wishlist-title {
     margin-bottom: 30px;
 }
@@ -3224,4 +3229,180 @@ td.actions {
 }
 .text-black-80 {
     color: rgb(0 0 0 / 80%) !important;
+}
+
+@media screen and (max-width: 770px) {
+ 
+     .wishlist_table tbody tr .product-thumbnail{
+        display: none;
+     }
+
+     .card{
+        border: 0;
+     }
+}
+
+
+/* -------------myAccount----------------- */
+.woocommerce-MyAccount-navigation {
+    float: left;
+    width: 30%;
+    padding-left: 4rem;
+}
+.woocommerce-MyAccount-navigation {
+    float: none !important;
+    width: 100% !important;
+    background-color: #eae9e9;
+    height: 2rem;
+}
+.woocommerce-MyAccount-navigation ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.woocommerce-MyAccount-navigation ul li {
+    padding-right: 2rem;
+    padding-top: 4px;
+}
+.woocommerce-MyAccount-content {
+    width: 90%;
+    margin: 0px 5rem;
+    padding: 4rem 0;
+}
+.address {
+    margin-bottom: 1rem;
+    font-style: normal;
+    line-height: inherit;
+}
+.addresses .title .edit {
+    float: right;
+}
+
+/* --------------addresss----------------------- */
+.woocommerce-MyAccount-content {
+    width: 90%;
+    margin: 0px 5rem;
+    padding: 4rem 0;
+}
+
+form .form-row {
+    padding: 3px;
+    margin: 0 0 6px;
+}
+ form .form-row-first, .woocommerce-page form .form-row-first {
+    float: left;
+}
+
+ form .form-row-first, form .form-row-last, .woocommerce-page form .form-row-first, .woocommerce-page form .form-row-last {
+    width: 47%;
+    overflow: visible;
+}
+
+ form .form-row label {
+    font-weight: 500;
+    color: #222;
+}
+ form .form-row label {
+    line-height: 2;
+}
+ form .form-row label, .woocommerce-page form .form-row label {
+    display: block;
+}
+ form .form-row .required {
+    visibility: visible;
+}
+
+ form .form-row .required {
+    color: red;
+    font-weight: 700;
+    border: 0 !important;
+    text-decoration: none;
+    visibility: hidden;
+}
+
+ form .form-row input.input-text, form .form-row input.input-text, form .form-row textarea {
+    padding: 6px 15px !important;
+}
+
+ form .form-row input.input-text {
+    height: 45px;
+}
+ form .form-row input.input-text, form .form-row textarea {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    outline: 0;
+    line-height: normal;
+}
+ form .form-row .input-text, .woocommerce-page form .form-row .input-text {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.select2-container--default .select2-selection--single {
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+.select2-container .select2-selection--single {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    height: 28px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.select2-container--default .select2-selection--single {
+    box-sizing: border-box !important;
+    width: 100% !important;
+    margin: 0 !important;
+    outline: 0 !important;
+    line-height: normal !important;
+    border: 1px solid #3b3b3b !important;
+    height: 45px !important;
+    border-radius: 0;
+}
+.select2-container--default .select2-selection--single {
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+.select2-container .select2-selection--single {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    height: 28px;
+    margin: 0 0 -4px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+form .form-row select {
+    cursor: pointer;
+    margin: 0;
+}
+ form .form-row select, .woocommerce-page form .form-row select {
+    width: 100%;
+}
+.select2-hidden-accessible {
+    border: 0 !important;
+    clip: rect(0 0 0 0) !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+}
+.select2-hidden-accessible {
+    border: 0 !important;
+    clip: rect(0 0 0 0) !important;
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
 }
