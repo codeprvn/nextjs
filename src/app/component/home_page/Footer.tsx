@@ -1,5 +1,8 @@
 import Link from 'next/link'
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedinIn, faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
   return (
@@ -128,7 +131,7 @@ function Footer() {
             <ul className="list-unstyled list-inline pt-1">
               <li className="list-inline-item cust_f_i">
                 <Link href="mailto:info@dhartii.in" target="_blank">
-                  <i className="fa fa-envelope" />
+                <FontAwesomeIcon icon={faEnvelope} />
                 </Link>
               </li>
               <li className="list-inline-item cust_f_i">
@@ -136,7 +139,7 @@ function Footer() {
                   href="https://www.linkedin.com/company/dhartii-in/"
                   target="_blank"
                 >
-                  <i className="fab fa-linkedin-in" />
+                 <FontAwesomeIcon icon={faLinkedinIn} />
                 </Link>
               </li>
               <li className="list-inline-item cust_f_i">
@@ -144,7 +147,7 @@ function Footer() {
                   href="https://www.facebook.com/profile.php?id=100094476648211"
                   target="_blank"
                 >
-                  <i className="fab fa-facebook-f" />
+                  <FontAwesomeIcon icon={faFacebookF} />
                 </Link>
               </li>
               <li className="list-inline-item cust_f_i">
@@ -152,7 +155,7 @@ function Footer() {
                   href="https://www.instagram.com/dhartii.in?igsh=OWVhczUwN3ZncDc="
                   target="_blank"
                 >
-                  <i className="fab fa-instagram" />
+                  <FontAwesomeIcon icon={faInstagram} />
                 </Link>
               </li>
             </ul>

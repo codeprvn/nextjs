@@ -1,7 +1,6 @@
 'use client'
 import Link from 'next/link'
 import { useState, useRef, useEffect } from 'react'
-import menuData from '../../constent/menuData.json'
 
 function Header() {
   const [isSidebar, SetIsSidebar] = useState(false)
@@ -59,7 +58,7 @@ function Header() {
                   <ul className="menu-main">
                     <li className="menu-item-has-children" onClick={()=> !isSubMenuActive && handleMenuItemClick('Men')}>
                       <Link href="#">
-                        Men <i className="fa fa-angle-down" />
+                        Men 
                       </Link>
                       <div className={`sub-menu mega-menu mega-menu-column-4 ${openMenu =='Men' ? 'active' : ''}`} style={{animation: "0.5s ease 0s 1 normal forwards running slideLeft"}}>
                         <div className="menu-title-div">
@@ -170,7 +169,7 @@ function Header() {
                     </li>
                     <li className="menu-item-has-children" onClick={()=> !isSubMenuActive && handleMenuItemClick('Women')}>
                       <Link href="#">
-                        Women <i className="fa fa-angle-down" />
+                        Women 
                       </Link>
                       <div className={`sub-menu mega-menu mega-menu-column-4 ${openMenu =='Women' ? 'active' : ''}`}>
                         <div className="menu-title-div">
@@ -323,7 +322,7 @@ function Header() {
                     </li>
                     <li className="menu-item-has-children" onClick={()=> !isSubMenuActive && handleMenuItemClick('Kids')}>
                       <Link href="#">
-                        Kids <i className="fa fa-angle-down" />
+                        Kids 
                       </Link>
                       <div className={`sub-menu mega-menu mega-menu-column-4 ${openMenu =='Kids' ? 'active' : ''}`}>
                         <div className="menu-title-div">
@@ -434,7 +433,7 @@ function Header() {
                     </li>
                     <li className="menu-item-has-children" onClick={()=> !isSubMenuActive && handleMenuItemClick('Accessories')}>
                       <Link href="#">
-                        Accessories <i className="fa fa-angle-down" />
+                        Accessories 
                       </Link>
                       <div className={`sub-menu mega-menu mega-menu-column-4 ${openMenu =='Accessories' ? 'active' : ''}`}>
                         <div className="menu-title-div">
@@ -542,7 +541,7 @@ function Header() {
           {menuData.menuItems.map((menuItem, index) => (
             <li key={index} className="menu-item-has-children" onClick={() => !isSubMenuActive && handleMenuItemClick(menuItem.title)}>
               <Link href="#">
-                {menuItem.title} <i className="fa fa-angle-down" />
+                {menuItem.title} 
               </Link>
               <div className={`sub-menu mega-menu mega-menu-column-4 ${openMenu === menuItem.title ? 'active' : ''}`} style={{ animation: "0.5s ease 0s 1 normal forwards running slideLeft" }}>
                 {menuItem.subMenu.map((subMenuItem, subIndex) => (

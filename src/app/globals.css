@@ -2617,6 +2617,11 @@ h1.jewellery_h:after{
     align-items: center;
     color: #000 !important;
 }
+
+.footer-social ul li a:hover {
+    opacity: .8;
+}
+
 .footer-links ul li {
     margin-bottom: -3px;  
 }
@@ -2635,7 +2640,7 @@ h1.jewellery_h:after{
     position: relative;
 }
 
-.cust_f_i i{
+.cust_f_i svg{
     font-size: 20px;
 }
 

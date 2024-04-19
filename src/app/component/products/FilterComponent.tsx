@@ -1,6 +1,18 @@
-import React from 'react'
+'use client'
+import React, {useState} from 'react';
+import Slider from '@mui/material/Slider';
 
 function FilterComponent() {
+  const [value, setValue] = useState<number[]>([20, 37]);
+
+  const handleChange = (event: Event, newValue: number | number[]) => {
+    setValue(newValue as number[]);
+  };
+
+  function valuetext(value: number) {
+    return `${value}°C`;
+  }
+
   return (
     // <aside className="col-sm-4 col-md-4 col-lg-3 filter-sidebar mb-4">
   <div className="filter-sidebar-wrap">
@@ -18,7 +30,19 @@ function FilterComponent() {
         className="widget woocommerce widget_price_filter"
       >
         <h2 className="widget-title">PRICE RANGE</h2>
-        <form
+        <Slider
+        getAriaLabel={() => 'Temperature range'}
+        value={value}
+        onChange={handleChange}
+        min={10}
+        max={80}
+        valueLabelDisplay="auto"
+        getAriaValueText={valuetext}
+        sx={{
+          color: '#8d9647' // Your custom color
+      }}
+      />
+        {/* <form
           method="get"
           action="https://dhartii.in/product-category/kids/girls/dresses-girls/"
         >
@@ -77,7 +101,8 @@ function FilterComponent() {
               <div className="clear" />
             </div>
           </div>
-        </form>
+        </form> */}
+        
       </section>{" "}
     </div>
     <section id="filter_by_brand-3" className="widget widget_filter_by_brand">
