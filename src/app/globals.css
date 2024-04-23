@@ -31,13 +31,22 @@ body {
     text-wrap: balance;
   }
 } */
+
+
+:root{
+    --body-text-color: #3E3E3E;
+    --body-background-color: #fff;
+    --theme-color: #8d9647;
+    --white-color: #fff;
+
+}
 body{
     font-family: 'Jost', sans-serif !important;
 font-size: 16px;
-color: #3E3E3E;
+color:var(--body-text-color);
 font-weight: 400;
 line-height: 1.6;
-background-color: #fff;
+background-color: var(-body-background-color);
 -webkit-text-size-adjust: 100%;
 -webkit-tap-highlight-color: transparent;
 -webkit-font-smoothing: antialiased;
@@ -47,8 +56,8 @@ background-color: #fff;
 .brand-header .account-opt-items span.count{
   font-size: 11px;
 font-weight: 400;
-color: #fff;
-background-color: #8d9647;
+color: var(--white-color);
+background-color: var(--theme-color);
 border-radius: 50%;
 height: 18px;
 width: 18px;
@@ -144,7 +153,7 @@ button#update_cart {
 
 /* border  */
 #mp_form_popup2 .mailpoet_form {
-    border: 0px solid white;
+    border: 0px solid var(--white-color);
     padding: 1px;
 }
 
@@ -629,7 +638,7 @@ position: relative;
 #progressbar-2 #step1:before {
 content: '\f058';
 font-family: "Font Awesome 5 Free";
-color: #fff;
+color: var(--white-color);
 width: 37px;
 margin-left: 0px;
 padding-left: 0px;
@@ -638,14 +647,14 @@ padding-left: 0px;
 #progressbar-2 #step2:before {
 content: '\f058';
 font-family: "Font Awesome 5 Free";
-color: #fff;
+color: var(--white-color);
 width: 37px;
 }
 
 #progressbar-2 #step3:before {
 content: '\f058';
 font-family: "Font Awesome 5 Free";
-color: #fff;
+color: var(--white-color);
 width: 37px;
 margin-right: 0;
 text-align: center;
@@ -654,7 +663,7 @@ text-align: center;
 #progressbar-2 #step4:before {
 content: '\f111';
 font-family: "Font Awesome 5 Free";
-color: #fff;
+color: var(--white-color);
 width: 37px;
 margin-right: 0;
 text-align: center;
@@ -764,7 +773,7 @@ display:none !Important;
 #progressbar-2 #step1-mob:before {
 content: '\f058';
 font-family: "Font Awesome 5 Free";
-color: #fff;
+color: var(--white-color);
 width: 37px;
 margin-left: 0px;
 padding-left: 0px;
@@ -774,7 +783,7 @@ padding-left: 0px;
 #progressbar-2 #step2-mob:before {
 content: '\f058';
 font-family: "Font Awesome 5 Free";
-color: #fff;
+color: var(--white-color);
 width: 37px;
 	    transform: rotate(270deg);
 }
@@ -782,7 +791,7 @@ width: 37px;
 #progressbar-2 #step3-mob:before {
 content: '\f058';
 font-family: "Font Awesome 5 Free";
-color: #fff;
+color: var(--white-color);
 width: 37px;
 margin-right: 0;
 text-align: center;
@@ -792,7 +801,7 @@ text-align: center;
 #progressbar-2 #step4-mob:before {
 content: '\f111';
 font-family: "Font Awesome 5 Free";
-color: #fff;
+color: var(--white-color);
 width: 37px;
 margin-right: 0;
 text-align: center;
@@ -1084,7 +1093,7 @@ h2.widget-title {
 .one-fifth {
   width: 20%;
   float: left;
-  color: #fff;
+  color: var(--white-color);
   text-align: center;
   height: 50px;
   cursor: pointer;
@@ -1178,7 +1187,7 @@ body.isOpened .search-wrapper {
     top: 65px;
 }
 .search-wrapper {
-    background: #8d9647;
+    background: var(--theme-color);
     border-radius: 10px;
 }
 search-wrapper .dgwt-wcas-search-wrapp {
@@ -1187,7 +1196,7 @@ search-wrapper .dgwt-wcas-search-wrapp {
 }
 
 .search-wrapper .dgwt-wcas-style-pirx .dgwt-wcas-sf-wrapp input[type=search].dgwt-wcas-search-input {
-    background-color: #ffffff;
+    background-color: var(--white-color);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     border-top-right-radius: 0px;
@@ -1336,7 +1345,7 @@ video {
 }
 
     .search-wrapper-2 {
-        background: #ffffff;
+        background: var(--white-color);
         border-radius: 0px;
         top: 95px !important;
         display: none;
@@ -1562,7 +1571,7 @@ video {
     .custom_header .menu>ul>li .sub-menu {
         position: absolute;
         z-index: 500;
-        background-color: #ffffff;
+        background-color: var(--white-color);
         box-shadow: -2px 2px 70px -25px rgba(0, 0, 0, 0.3);
         padding: 20px 30px;
         transition: all 0.5s ease;
@@ -1752,7 +1761,7 @@ video {
         .custom_header .menu {
             position: fixed;
             width: 320px;
-            background-color: #ffffff;
+            background-color: var(--white-color);
             left: 0;
             top: 0;
             height: 100%;
@@ -1800,7 +1809,7 @@ video {
             position: relative;
             z-index: 501;
             position: sticky;
-            background-color: #ffffff;
+            background-color: var(--white-color);
             top: 0;
         }
 
@@ -1971,7 +1980,7 @@ video {
 
 .product-desc-content .product-price del {
     font-weight: 400;
-    color: #8d9647;
+    color: var(--theme-color);
     text-decoration: none;
 }
     .store_quality_cont {
@@ -2251,7 +2260,7 @@ span.cproductinfooffer {
   width: 100%;
 	margin-top:6px;
   float: left;
-  color: #fff;
+  color: var(--white-color);
   text-align: center;
   height: 50px;
   cursor: pointer;
@@ -2394,13 +2403,13 @@ li.breadcrumb-item span a, li.breadcrumb-item span{
 
 
 .banner-link{
-    background-color: #ffffff;
+    background-color: var(--white-color);
     bottom: 35px;
     left: 35px;
     padding: 10px 20px 10px 20px;
 }
 .swiper-pagination-bullet-active{
-    background-color: #ffffff;
+    background-color: var(--white-color);
 }
 .swiper-pagination-bullet-active-main{
     width: 20px;
@@ -2421,7 +2430,7 @@ li.breadcrumb-item span a, li.breadcrumb-item span{
     bottom: 10px;
     right: 0;
     width: 100%;
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 12px;
 }
 .home_about_us_lines p {
@@ -2431,7 +2440,7 @@ li.breadcrumb-item span a, li.breadcrumb-item span{
 
 
 .crating{
-    background-color: #ffffff;
+    background-color: var(--white-color);
     position: absolute;
     bottom: 60px;
     left: 6px;
@@ -2519,10 +2528,10 @@ a.category-block{
 
 .jewellery_h{
     font-size: 55px;
-    color: #ffffff;
+    color: var(--white-color);
 }
 h1.jewellery_h:after{
-    border-bottom: 5px solid #ffffff;
+    border-bottom: 5px solid var(--white-color);
     content: "";
     height: 3px;
     position: relative;
@@ -2530,7 +2539,7 @@ h1.jewellery_h:after{
 }
 .jewellery_p{
     font-size: 55px;
-    color: #ffffff;
+    color: var(--white-color);
     font-weight: bold;
 }
 
@@ -2551,7 +2560,7 @@ h1.jewellery_h:after{
     display: block;
 }
 .home_about_btn{
-    color: #ffffff;
+    color: var(--white-color);
     background-color: #000000;
     border-radius: 2px !important;
     padding: 7px 17px 5px 17px;
@@ -2565,7 +2574,7 @@ h1.jewellery_h:after{
     /* position: absolute!important;
     left: 30px;
     margin-top: 80px; */
-    background-color: #ffffff;
+    background-color: var(--white-color);
     border-radius: 2px !important;
     padding: 7px 17px 5px 17px;
     font-size: 12px;  
@@ -2578,7 +2587,7 @@ h1.jewellery_h:after{
     border-radius: 2px !important;
     padding: 7px 17px 5px 17px;
     font-size: 12px;
-    color: #ffffff;
+    color: var(--white-color);
 }
 .category-block .shop-link{
     margin-top: 100px;
@@ -2803,7 +2812,7 @@ table {
     width: auto;
     height: 45px;
     color: #000;
-    background-color: #fff;
+    background-color: var(--white-color);
 }
 
 .thwvsf-wrapper-ul .thwvsf-wrapper-item-li.attr_swatch_design_1 {
@@ -2824,7 +2833,7 @@ table {
     width: auto;
     height: 45px;
     color: #000;
-    background-color: #fff;
+    background-color: var(--white-color);
 }
 .thwvsf-wrapper-ul .thwvsf-wrapper-item-li.thwvsf-label-li {
     min-width: 30px;
@@ -2906,7 +2915,7 @@ table {
 }
 
 .single_add_to_cart_button.ad2 {
-    background-color: #8d9647 !important;
+    background-color: var(--theme-color) !important;
     border-radius: 4px !important;
     color: #fff !important;
     line-height: 22px !important;
@@ -3085,7 +3094,7 @@ td.actions {
     align-items: center;
 }
 .Add-More-Product, .single_add_to_cart_button.ad2 {
-    background-color: #8d9647 !important;
+    background-color: var(--theme-color)!important;
     border-radius: 4px !important;
     color: #fff !important;
     line-height: 22px !important;
@@ -3345,7 +3354,7 @@ form .form-row {
 }
 
 .select2-container--default .select2-selection--single {
-    background-color: #fff;
+    background-color: var(--white-color);
     border: 1px solid #aaa;
     border-radius: 4px;
 }
@@ -3368,7 +3377,7 @@ form .form-row {
     border-radius: 0;
 }
 .select2-container--default .select2-selection--single {
-    background-color: #fff;
+    background-color: var(--white-color);
     border: 1px solid #aaa;
     border-radius: 4px;
 }
@@ -3410,4 +3419,19 @@ form .form-row select {
     padding: 0 !important;
     position: absolute !important;
     width: 1px !important;
+}
+
+ul.psfw-social-icons li a {
+    width: 30px;
+    height: 30px;
+    text-decoration: none !important;
+    padding: 0;
+    border: 1px solid #333;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 5px 0;
+    border-radius: 5px;
 }

@@ -1,6 +1,8 @@
 'use client'
 import Link from 'next/link'
 import { useState, useRef, useEffect } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleLeft } from '@fortawesome/free-solid-svg-icons/faAngleLeft';
 
 function Header() {
   const [isSidebar, SetIsSidebar] = useState(false)
@@ -50,7 +52,7 @@ function Header() {
                 <nav className={`menu ${isSidebar ? 'active':''}`} ref={menuActiveRef}>
                   <div className={`mobile-menu-head ${isSubMenuActive ? 'active':''}`}>
                     <div className="go-back" onClick={closeSubMenu}>
-                      <i className="fa fa-angle-left" />
+                    <FontAwesomeIcon icon={faAngleLeft} />
                     </div>
                     <div className="current-menu-title" >{openMenu}</div>
                     <div className="mobile-menu-close" onClick={handleHamburger}>×</div>

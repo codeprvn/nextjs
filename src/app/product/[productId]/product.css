@@ -60,7 +60,7 @@ thwvsf-wrapper-ul .thwvsf-wrapper-item-li.attr_swatch_design_1.thwvsf-selected, 
     width: auto;
     height: 45px;
     color: #000;
-    background-color: #fff;
+    background-color: var(--white-color);
 }
 .thwvsf-wrapper-ul .thwvsf-wrapper-item-li.attr_swatch_design_1 {
     width: 45px;
@@ -166,4 +166,13 @@ thwvsf-wrapper-ul .thwvsf-wrapper-item-li.attr_swatch_design_1.thwvsf-selected, 
 
 .accordion-button::after{
     display: none;
+}
+
+.accordion-item:first-of-type {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.accordion-item:last-of-type {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
 }

@@ -1,5 +1,5 @@
 .image-gallery-icon {
-    color: #fff;
+    color: var(--white-color);
     transition: all .3s ease-out;
     appearance: none;
     background-color: transparent;
@@ -226,7 +226,7 @@
 .image-gallery-slide .image-gallery-description {
     background: rgba(0, 0, 0, .4);
     bottom: 70px;
-    color: #fff;
+    color: var(--white-color);
     left: 0;
     line-height: 1;
     padding: 10px 20px;
@@ -261,7 +261,7 @@
 .image-gallery-bullets .image-gallery-bullet {
     appearance: none;
     background-color: transparent;
-    border: 1px solid #fff;
+    border: 1px solid var(--white-color);
     border-radius: 50%;
     box-shadow: 0 2px 2px #1a1a1a;
     cursor: pointer;
@@ -293,8 +293,8 @@
 
 .image-gallery-bullets .image-gallery-bullet.active {
     transform: scale(1.2);
-    border: 1px solid #fff;
-    background: #fff
+    border: 1px solid var(--white-color);
+    background: var(--white-color);
 }
 
 @media(hover: hover)and (pointer: fine) {
@@ -437,11 +437,12 @@
 
 @media(max-width: 768px) {
 
-    .image-gallery-thumbnail.active,
-    .image-gallery-thumbnail:focus {
-        border: 3px solid #337ab7
-    }
+    .image-gallery-thumbnail.active .image-gallery-thumbnail-image,
+.image-gallery-thumbnail:hover .image-gallery-thumbnail-image{
+    opacity: 1;
 }
+}
+
 
 @media(hover: hover)and (pointer: fine) {
     .image-gallery-thumbnail:hover {
@@ -458,7 +459,7 @@
 
 .image-gallery-thumbnail-label {
     box-sizing: border-box;
-    color: #fff;
+    color: var(--white-color);
     font-size: 1em;
     left: 0;
     line-height: 1em;
@@ -480,7 +481,7 @@
 
 .image-gallery-index {
     background: rgba(0, 0, 0, .4);
-    color: #fff;
+    color: var(--white-color);
     line-height: 1;
     padding: 10px 20px;
     position: absolute;

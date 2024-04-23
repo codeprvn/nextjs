@@ -1,7 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck, faTrash } from "@fortawesome/free-solid-svg-icons";
+import { faWhatsapp, faFacebookF } from '@fortawesome/free-brands-svg-icons';
+import { faClipboard } from '@fortawesome/free-solid-svg-icons/faClipboard';
 
 function SocialMediaWrap() {
   return (
@@ -13,7 +14,7 @@ function SocialMediaWrap() {
             data-psfw-href="https://www.facebook.com/sharer/sharer.php?u="
             target="_blank"
           >
-            <i className="fa-brands fa-facebook" />
+            <FontAwesomeIcon icon={faFacebookF} />
           </Link>
         </li>
         <li>
@@ -22,7 +23,7 @@ function SocialMediaWrap() {
             data-psfw-href="https://api.whatsapp.com/send?text="
             target="_blank"
           >
-            <i className="fa-brands fa-whatsapp" />
+            <FontAwesomeIcon icon={faWhatsapp} />
           </Link>
         </li>
         <li>
@@ -32,7 +33,7 @@ function SocialMediaWrap() {
             data-psfw-href=""
             href="#"
           >
-            <i className="psfw-clipboard fa-solid fa-clipboard" />
+            <FontAwesomeIcon icon={faClipboard} />
           </Link>
         </li>
       </ul>
